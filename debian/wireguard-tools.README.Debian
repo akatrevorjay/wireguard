@@ -1,26 +1,17 @@
-Using the experimental WireGuard VPN and encrypted Internet tunnel
+Using the experimental WireGuard VPN and encrypted network tunnel
 ==================================================================
 
 WireGuard is still in the experimental stages.  Please use caution!
 
-This package ships with some dangerous but interesting example
-configuration.
+To use WireGuard, you'll need an additional kernel module which is
+only available for Linux 4.1 or later.
 
-After installing WireGuard, if you'd like to try sending some packets
-through WireGuard, you might want to try, for testing purposes only,
-the script in
-/usr/share/doc/wireguard-tools/examples/client-server-example/client.sh
-as the superuser.
+On debian systems, assuming you're running a recent-enough kernel, you
+should be able to build and install the kernel module with only:
 
-# /usr/share/doc/wireguard-tools/examples/client-server-example/client.sh
+  apt install linux-headers-$(uname -r) wireguard-dkms
 
-This will automatically setup interface wg0, through a very insecure
-transport that is only suitable for demonstration purposes. You can
-then try loading the hidden website or sending pings:
+Please see https://www.wireguard.io/quickstart for more details on
+using WireGuard.
 
-$ sensible-browser http://192.168.4.1
-$ ping 192.168.4.1
-
-Please see https://www.wireguard.io/quickstart for more details.
-
- -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>, Thu, 30 Jun 2016 16:59:37 -0400
+ -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>, Sat,  2 Jul 2016 10:53:17 -0400
