@@ -203,7 +203,7 @@ static char *bytes(uint64_t b)
 static const char *COMMAND_NAME = NULL;
 static void show_usage(void)
 {
-	fprintf(stderr, "Usage: %s %s { <interface> | all | interfaces } [public-key | private-key | preshared-key | listen-port | peers | endpoints | allowed-ips | latest-handshake | bandwidth | persistent-keepalive]\n", PROG_NAME, COMMAND_NAME);
+	fprintf(stderr, "Usage: %s %s { <interface> | all | interfaces } [public-key | private-key | preshared-key | listen-port | peers | endpoints | allowed-ips | latest-handshakes | bandwidth | persistent-keepalive]\n", PROG_NAME, COMMAND_NAME);
 }
 
 static void pretty_print(struct wgdevice *device)
@@ -288,7 +288,7 @@ static bool ugly_print(struct wgdevice *device, const char *param, bool with_int
 			printf("%s\t", key(peer->public_key));
 			if (peer->num_ipmasks) {
 				for_each_wgipmask(peer, ipmask, j)
-					printf("%s/%u%s", ip(ipmask), ipmask->cidr, j == (size_t)peer->num_ipmasks - 1 ? "\n" : ", ");
+					printf("%s/%u%c", ip(ipmask), ipmask->cidr, j == (size_t)peer->num_ipmasks - 1 ? '\n' : ' ');
 			} else
 				printf("(none)\n");
 		}
