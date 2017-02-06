@@ -1,3 +1,18 @@
+wireguard (0.0.20170115-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Mon, 06 Feb 2017 04:40:14 -0500
+
+wireguard (0.0.20170105-1) UNRELEASED; urgency=medium
+
+  * New upstream release
+    - adds wg-quick
+    - adds bash tab completion for wg
+    - adds systemd .service template for wg-quick
+
+ -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Wed, 11 Jan 2017 23:19:09 -0500
+
 wireguard (0.0.20161230-1) unstable; urgency=medium
 
   * New upstream release.
