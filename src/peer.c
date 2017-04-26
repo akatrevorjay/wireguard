@@ -35,6 +35,7 @@ struct wireguard_peer *peer_create(struct wireguard_device *wg, const u8 public_
 	peer->device = wg;
 	cookie_init(&peer->latest_cookie);
 	noise_handshake_init(&peer->handshake, &wg->static_identity, public_key, peer);
+	cookie_checker_precompute_keys(&wg->cookie_checker, peer);
 	mutex_init(&peer->keypairs.keypair_update_lock);
 	INIT_WORK(&peer->transmit_handshake_work, packet_send_queued_handshakes);
 	rwlock_init(&peer->endpoint_lock);
@@ -85,7 +86,7 @@ void peer_remove(struct wireguard_peer *peer)
 static void rcu_release(struct rcu_head *rcu)
 {
 	struct wireguard_peer *peer = container_of(rcu, struct wireguard_peer, rcu);
-	pr_debug("Peer %Lu (%pISpfsc) destroyed\n", peer->internal_id, &peer->endpoint.addr_storage);
+	pr_debug("Peer %Lu (%pISpfsc) destroyed\n", peer->internal_id, &peer->endpoint.addr);
 	skb_queue_purge(&peer->tx_packet_queue);
 	dst_cache_destroy(&peer->endpoint_cache);
 	kzfree(peer);
