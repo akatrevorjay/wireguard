@@ -1,3 +1,9 @@
+wireguard (0.0.20170623-1) unstable; urgency=medium
+
+  * Bump
+
+ -- Trevor Joynson (trevorj) <gpg@skywww.net>  Sun, 25 Jun 2017 00:37:05 -0700
+
 wireguard (0.0.20170421-2) unstable; urgency=medium
 
   * update/correct debian/copyright
