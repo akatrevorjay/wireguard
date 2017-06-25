@@ -1,0 +1,184 @@
+wireguard (0.0.20170421-2) unstable; urgency=medium
+
+  * update/correct debian/copyright
+
+ -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Tue, 25 Apr 2017 12:56:14 -0400
+
+wireguard (0.0.20170421-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Mon, 24 Apr 2017 10:00:55 -0400
+
+wireguard (0.0.20170409-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Mon, 10 Apr 2017 01:50:46 -0400
+
+wireguard (0.0.20170324-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Fri, 24 Mar 2017 00:46:22 -0400
+
+wireguard (0.0.20170320.1-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Mon, 20 Mar 2017 11:43:36 -0400
+
+wireguard (0.0.20170223-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Thu, 23 Feb 2017 11:29:01 -0500
+
+wireguard (0.0.20170214-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Tue, 14 Feb 2017 08:51:02 -0500
+
+wireguard (0.0.20170213-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Mon, 13 Feb 2017 19:06:05 -0500
+
+wireguard (0.0.20170115-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Mon, 06 Feb 2017 04:40:14 -0500
+
+wireguard (0.0.20170105-1) UNRELEASED; urgency=medium
+
+  * New upstream release
+    - adds wg-quick
+    - adds bash tab completion for wg
+    - adds systemd .service template for wg-quick
+
+ -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Wed, 11 Jan 2017 23:19:09 -0500
+
+wireguard (0.0.20161230-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Tue, 03 Jan 2017 02:21:26 -0500
+
+wireguard (0.0.20161223-1) unstable; urgency=medium
+
+  * New upstream release.
+  * use uptream's install-dkms Makefile target and dkms.conf instead of
+    maintaining our own.
+
+ -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Sat, 24 Dec 2016 16:58:46 -0500
+
+wireguard (0.0.20161218-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Move from experimental to unstable.  Upstream isn't committed to a
+    long-term stable branch, so we should keep this from migrating to
+    stretch, but it has stabilized enough for wider distribution.
+  * Note: we are not using upstream's install-dkms Makefile target.
+
+ -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Thu, 22 Dec 2016 08:25:15 -0500
+
+wireguard (0.0.20161129-experimental1) experimental; urgency=medium
+
+  * new upstream release
+  * generate src/version.h from debian package version instead of git
+    repo.
+
+ -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Mon, 05 Dec 2016 23:01:22 -0500
+
+wireguard (0.0.20161116.1-experimental1) experimental; urgency=medium
+
+  * new upstream release
+
+ -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Thu, 17 Nov 2016 08:07:52 +0900
+
+wireguard (0.0.20161110-experimental1) experimental; urgency=medium
+
+  * new upstream release
+
+ -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Thu, 10 Nov 2016 12:25:50 -0800
+
+wireguard (0.0.20161105-experimental1) experimental; urgency=medium
+
+  * new upstream release
+
+ -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Sun, 06 Nov 2016 01:47:35 -0400
+
+wireguard (0.0.20161103-experimental1) experimental; urgency=medium
+
+  * new upstream release
+
+ -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Fri, 04 Nov 2016 10:34:52 -0400
+
+wireguard (0.0.20161102-experimental1) experimental; urgency=medium
+
+  * new upstream release
+
+ -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Wed, 02 Nov 2016 12:52:58 -0400
+
+wireguard (0.0.20161025-experimental1) experimental; urgency=medium
+
+  * new upstream release
+
+ -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Tue, 25 Oct 2016 10:05:12 -0400
+
+wireguard (0.0.20161014-experimental1) experimental; urgency=medium
+
+  * new upstream release
+
+ -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Mon, 24 Oct 2016 14:04:50 -0400
+
+wireguard (0.0.20160808-experimental2) experimental; urgency=medium
+
+  [ Jason A. Donenfeld ]
+  * properly ship self-tests (Closes: #833961)
+
+ -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Fri, 12 Aug 2016 01:45:04 -0400
+
+wireguard (0.0.20160808-experimental1) experimental; urgency=medium
+
+  * New upstream release
+
+ -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Mon, 08 Aug 2016 16:54:39 -0400
+
+wireguard (0.0.20160722-experimental1) experimental; urgency=medium
+
+  * New upstream release
+
+ -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Fri, 22 Jul 2016 17:21:11 -0400
+
+wireguard (0.0.20160711-experimental1) experimental; urgency=medium
+
+  * New upstream release
+
+ -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Tue, 12 Jul 2016 13:20:26 +0200
+
+wireguard (0.0.20160708.1-experimental1) experimental; urgency=medium
+
+  * New upstream release
+  * build-depend on pkg-config
+  * ship upstream examples
+
+ -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Fri, 08 Jul 2016 23:13:54 +0200
+
+wireguard (0.0.20160630-experimental2) experimental; urgency=medium
+
+  * avoid shipping example/demo scripts at request of upstream
+  * limit wireguard-tools to only linux platforms, since it makes no sense
+    elsewhere.
+
+ -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Sat, 02 Jul 2016 10:32:49 -0400
+
+wireguard (0.0.20160630-experimental1) experimental; urgency=medium
+
+  * First package upload (Closes: #829107)
+
+ -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Thu, 30 Jun 2016 12:50:33 -0400
+
