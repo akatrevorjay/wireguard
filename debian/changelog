@@ -1,4 +1,4 @@
-wireguard (0.0.20170703-1~2.gbpb73ef0) UNRELEASED; urgency=medium
+wireguard (0.0.20170703-1~2.gbpb73ef0~precise0) precise; urgency=medium
 
   ** SNAPSHOT build @b73ef02f3f35cdb707c32050798eb2c738938dd4 **
 
@@ -46,8 +46,10 @@ wireguard (0.0.20170703-1~2.gbpb73ef0) UNRELEASED; urgency=medium
   * Bump
   * Bump
   * Bump
+  * Rebuild for precise
+  * Changed build-dependencies to packages available in precise
 
- -- Trevor Joynson (Debian) <debian@trevor.joynson.io>  Mon, 03 Jul 2017 17:41:45 -0700
+ -- Trevor Joynson (Debian) <debian@trevor.joynson.io>  Mon, 03 Jul 2017 17:43:33 -0700
 
 wireguard (0.0.20170623-1) unstable; urgency=medium
 
