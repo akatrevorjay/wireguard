@@ -1,3 +1,11 @@
+wireguard (0.0.20170623-1ubuntu1~1.gbpf2f59d) UNRELEASED; urgency=medium
+
+  ** SNAPSHOT build @f2f59d912ea5001e5be20a98ec6dd52b0ad3f2b6 **
+
+  * UNRELEASED
+
+ -- Trevor Joynson (Debian) <debian@trevor.joynson.io>  Mon, 03 Jul 2017 17:33:01 -0700
+
 wireguard (0.0.20170623-1) unstable; urgency=medium
 
   * Bump
