@@ -1,6 +1,6 @@
-wireguard (0.0.20170703-1~1.gbp22f336) UNRELEASED; urgency=medium
+wireguard (0.0.20170703-1~2.gbpb73ef0) UNRELEASED; urgency=medium
 
-  ** SNAPSHOT build @22f33645ebca487b8db6c770350e84198c7feb2f **
+  ** SNAPSHOT build @b73ef02f3f35cdb707c32050798eb2c738938dd4 **
 
   [ Trevor Joynson (Debian) ]
   ** SNAPSHOT build @f2f59d912ea5001e5be20a98ec6dd52b0ad3f2b6 **
@@ -45,8 +45,9 @@ wireguard (0.0.20170703-1~1.gbp22f336) UNRELEASED; urgency=medium
   * Bump
   * Bump
   * Bump
+  * Bump
 
- -- Trevor Joynson (Debian) <debian@trevor.joynson.io>  Mon, 03 Jul 2017 17:40:28 -0700
+ -- Trevor Joynson (Debian) <debian@trevor.joynson.io>  Mon, 03 Jul 2017 17:41:45 -0700
 
 wireguard (0.0.20170623-1) unstable; urgency=medium
 
