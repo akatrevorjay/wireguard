@@ -1,10 +1,51 @@
-wireguard (0.0.20170623-1ubuntu1~1.gbpf2f59d) UNRELEASED; urgency=medium
+wireguard (0.0.20170623-1ubuntu1~2.gbp21b091) UNRELEASED; urgency=medium
 
+  ** SNAPSHOT build @21b0916e96d8e9ef9cca56c568877e27ec21482c **
+
+  [ Trevor Joynson (Debian) ]
   ** SNAPSHOT build @f2f59d912ea5001e5be20a98ec6dd52b0ad3f2b6 **
 
   * UNRELEASED
 
- -- Trevor Joynson (Debian) <debian@trevor.joynson.io>  Mon, 03 Jul 2017 17:33:01 -0700
+  [ Jason A. Donenfeld ]
+  * main: annotate init/exit functions to save memory
+  * selftest: remove antique siphash self test
+  * haskell: re-add updated haskell example
+  * wg-quick: properly match IPv6 endpoint
+  * device: netdevice destruction logic change for 4.12
+  * device: only use one sleep notifier
+  * receive: extend rate limiting to 1 second after under load detection
+  * curve25519: satisfy sparse and use short types
+  * curve25519: keep certain sandy2x functions in C
+  * ratelimiter: rewrite from scratch
+  * socket: verify saddr belongs to interface
+  * socket: use ip_rt_put instead of dst_release
+  * device: avoid double icmp send on routing loop
+  * compat: clean up cruft
+  * device: remove icmp conntrack hacks
+  * global: cleanup IP header checking
+  * compat: do not export symbols unnecessarily
+  * wg-quick: use printf -v instead of namerefs for bash 4.2
+  * compat: support EL7.3
+  * compat: support Ubuntu 14.04
+  * version: bump snapshot
+  * tools: remove double include in ipc
+  * receive: fix off-by-one in packet length checking
+  * receive: pull IP header into head
+  * version: bump snapshot
+  * receive: cleanup error handlers
+  * compat: support OpenSUSE's backports
+  * compat: workaround Ubuntu 16.10 kernel weirdness
+
+  [ Samuel Holland ]
+  * gitignore: ignore split DWARF debug info
+
+  [ Trevor Joynson (Debian) ]
+  * debianize
+  * Bump
+  * Bump
+
+ -- Trevor Joynson (Debian) <debian@trevor.joynson.io>  Mon, 03 Jul 2017 17:39:15 -0700
 
 wireguard (0.0.20170623-1) unstable; urgency=medium
 
