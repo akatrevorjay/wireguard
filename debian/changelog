@@ -1,6 +1,6 @@
-wireguard (0.0.20171017-1~1.gbpb53fec) UNRELEASED; urgency=medium
+wireguard (0.0.20171017-1~2.gbpce9a92) UNRELEASED; urgency=medium
 
-  ** SNAPSHOT build @b53fec504658e52b2051f8ebdaffc4be99838aca **
+  ** SNAPSHOT build @ce9a9247f28a5817852dd7f41ba8b99e764cf6b4 **
 
   [ Trevor Joynson (Debian) ]
   ** SNAPSHOT build @f2f59d912ea5001e5be20a98ec6dd52b0ad3f2b6 **
@@ -237,8 +237,11 @@ wireguard (0.0.20171017-1~1.gbpb53fec) UNRELEASED; urgency=medium
   * crypto/avx: make sure we can actually use ymm registers
 
   [ Trevor Joynson (Debian) ]
+  * Bump
+  * Bump
+  * New patches
 
- -- Trevor Joynson (Debian) <debian@trevor.joynson.io>  Sun, 22 Oct 2017 05:28:23 -0700
+ -- Trevor Joynson (Debian) <debian@trevor.joynson.io>  Sun, 22 Oct 2017 05:41:14 -0700
 
 wireguard (0.0.20170623-1) unstable; urgency=medium
 
