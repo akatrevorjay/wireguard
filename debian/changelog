@@ -1,4 +1,4 @@
-wireguard (0.0.20171017-1ubuntu2~2.gbp4fb123) UNRELEASED; urgency=medium
+wireguard (0.0.20171017-1ubuntu2~2.gbp4fb123~yakkety0) yakkety; urgency=medium
 
   ** SNAPSHOT build @4fb123d6e0fb307580599fc6f646f8dd811bd36d **
 
@@ -6,8 +6,10 @@ wireguard (0.0.20171017-1ubuntu2~2.gbp4fb123) UNRELEASED; urgency=medium
   * Bump
   * grr
   * grr
+  * Rebuild for yakkety
+  * Changed build-dependencies to packages available in yakkety
 
- -- Trevor Joynson (Debian) <debian@trevor.joynson.io>  Sun, 22 Oct 2017 06:11:34 -0700
+ -- Trevor Joynson (Debian) <debian@trevor.joynson.io>  Sun, 22 Oct 2017 06:12:01 -0700
 
 wireguard (0.0.20171017-1ubuntu1) zesty; urgency=medium
 
