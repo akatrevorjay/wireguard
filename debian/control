@@ -3,7 +3,7 @@ Section: net
 Priority: extra
 Maintainer: Daniel Kahn Gillmor <dkg@fifthhorseman.net>
 Build-Depends:
- debhelper (>= 10~),
+ debhelper (>= 9~),
  dkms,
  libmnl-dev,
  pkg-config
