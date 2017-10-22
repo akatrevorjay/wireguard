@@ -241,7 +241,7 @@ wireguard (0.0.20171017-1~2.gbpce9a92) UNRELEASED; urgency=medium
   * Bump
   * New patches
 
- -- Trevor Joynson (Debian) <debian@trevor.joynson.io>  Sun, 22 Oct 2017 05:41:14 -0700
+ -- Trevor Joynson (trevorj) <gpg@skywww.net>  Sun, 22 Oct 2017 05:41:14 -0700
 
 wireguard (0.0.20170623-1) unstable; urgency=medium
 
