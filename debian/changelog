@@ -1,3 +1,233 @@
+wireguard (0.0.20171017-1ubuntu1) zesty; urgency=medium
+
+  [ Jason A. Donenfeld ]
+  * main: annotate init/exit functions to save memory
+  * selftest: remove antique siphash self test
+  * haskell: re-add updated haskell example
+  * wg-quick: properly match IPv6 endpoint
+  * device: netdevice destruction logic change for 4.12
+  * device: only use one sleep notifier
+  * receive: extend rate limiting to 1 second after under load detection
+  * curve25519: satisfy sparse and use short types
+  * curve25519: keep certain sandy2x functions in C
+  * ratelimiter: rewrite from scratch
+  * socket: verify saddr belongs to interface
+  * socket: use ip_rt_put instead of dst_release
+  * device: avoid double icmp send on routing loop
+  * compat: clean up cruft
+  * device: remove icmp conntrack hacks
+  * global: cleanup IP header checking
+  * compat: do not export symbols unnecessarily
+  * wg-quick: use printf -v instead of namerefs for bash 4.2
+  * compat: support EL7.3
+  * compat: support Ubuntu 14.04
+  * version: bump snapshot
+  * tools: remove double include in ipc
+  * receive: fix off-by-one in packet length checking
+  * receive: pull IP header into head
+  * version: bump snapshot
+  * receive: cleanup error handlers
+  * compat: support OpenSUSE's backports
+  * compat: workaround Ubuntu 16.10 kernel weirdness
+
+  [ Samuel Holland ]
+  * gitignore: ignore split DWARF debug info
+
+  [ Jason A. Donenfeld ]
+  * ratelimiter: use kvzalloc for hash table allocation
+  * ratelimiter: use IPv6 /64 instead of /96
+  * ratelimiter: add self-test
+  * counter: use correct unit for indices
+  * compat: priv_destructor got backported
+  * device: cleanup register_netdev logic
+  * socket: the checkers distinguish between _bh and non _bh
+  * version: bump snapshot
+  * ratelimiter: consistently use non-bh rcu
+  * qemu: update default testing kernel
+  * socket: style
+  * compat: work around odd kernels that backport kvfree
+  * selftests: ensure that there isnt CPU lag when testing rate limiter
+  * send: orphan skbs when buffering longterm
+  * device: support 4.13's extact newlink param
+  * global: use pointer to net_device
+  * ratelimiter: use KMEM_CACHE macro
+  * data: use KMEM_CACHE macro
+
+  [ Samuel Holland ]
+  * data: simplify no-keypair failure case
+  * send: use skb_queue_empty where appropriate
+
+  [ Samuel Neves ]
+  * blake2s: move compression loop to assembly
+
+  [ Jason A. Donenfeld ]
+  * blake2s: fix up alignment issues
+  * global: wireguard.io --> wireguard.com
+  * qemu: warn on all unseeded random usage when in debug mode
+  * wg-quick: usage typos
+  * android: add port of wg-quick
+  * wg-quick: do not set explicit src route for v6 default route
+  * wg-quick: do not use grep
+  * wg-quick: add explicit support for common DNS usage
+  * version: bump snapshot
+  * android: fix readme
+  * compat: work around odd kernels that backport kv[mz]alloc
+  * recieve: cleanup variable usage
+  * compat: get rid of warnings on frankenkernels
+  * socket: move print function from compat
+  * receive: single line if style
+  * recieve: pskb_trim already checks length
+  * contrib: move Android tools to wireguard-android repo
+  * selftest: more checking in ratelimiter
+  * blake2s: satisfy sparse
+  * routingtable: unbloat BUG()
+  * tools: stricter userspace ipc parsing
+  * netns: explictly test reply to sender routing
+  * netns: work around linux 3.10 issues
+  * receive: move lastminute guard into timer event
+  * timers: rename confusingly named functions and variables
+  * noise: infer initiator or not from handshake state
+  * timers: do not send out double keepalive
+  * compat: support grsecurity with our compat padata implementation
+  * hashtables: allow up to 2^{20} peers per interface
+  * hashtables: if we have an index match, don't search further ever
+  * version: bump snapshot
+  * socket: improve reply-to-src algorithm
+  * tools: fix removal of psk
+  * wg-quick: only bash complete existing interfaces for down
+  * compat: fix padata to work with 4.13
+  * version: bump snapshot
+  * device: IFF_NO_QUEUE is a private flag, not a public one
+  * socket: satisfy sparse
+  * routingtable: satisfy sparse
+  * timers: style
+  * send: no need to check for NULL since ref is valid
+  * qemu: enable debug info for debug qemu
+  * compat: ensure we can build without compat.h
+  * queue: entirely rework parallel system
+  * compat: support RHEL 7.4
+  * version: bump snapshot
+  * receive: use netif_receive_skb instead of netif_rx
+  * queueing: no need to memzero struct
+  * send: don't take uninitialized lock
+  * device: properly arrange structs
+  * peer: rearrange structs
+  * queueing: clean up worthless helper
+  * queueing: rename cpumask function
+  * contrib: add sticky sockets example code
+  * netns: disable rp_filter for final test
+  * timers: convert to use netif_running
+  * config: do not reset device port
+  * tools: use key_is_zero for comparing to zeros
+  * queueing: more standard init/uninit names
+  * receive: mark function static
+  * tools: uapi: only make sure socket file is socket
+  * netlink: switch from ioctl to netlink for configuration
+  * peer: ensure that lookup tables are added last
+  * receive: do not consider netfilter drop a real drop
+  * timers: ensure safe timer removal
+  * peer: remove from RCU lists when the kref is zero
+  * debug: add better insert target
+  * wg-quick: anchor sysctl regex to start and end
+  * wg-quick: verify wireguard interface in more clever way
+  * wg-quick: check permissions of parent directory
+  * noise: use spinlock for rotating keys
+  * messages: reduce maximum staged packets per peer
+  * qemu: add watchdog for not hanging on oops
+  * ratelimiter: wait for destruction, not for read_unlock
+  * tools: do not warn on unrecognized items
+  * version: bump snapshot
+  * tools: simmer down silly compilers
+  * tools: compile on non-Linux
+  * contrib: remove worthless build artifact
+  * kernel-tree: remember UAPI in patch creation
+  * curve25519-neon-arm: force ARM encoding, since this is unrepresentable in Thumb
+  * receive: simplify message type validation
+  * global: satisfy bitshift pedantry
+  * global: use _WG prefix for include guards
+  * global: add space around variable declarations
+  * Makefile: add non-verbose mode to tools
+  * receive: use local keypair, not ctx keypair in error path
+  * send: put keypair reference
+  * receive: we're not planning on turning that into a while loop now
+  * queueing: use ptr_ring instead of linked lists
+  * compat: support ptr_ring for old kernels
+  * compat: conditionally redefine GENL_UNS_ADMIN_PERM
+  * compat: RHEL backported netlink changes
+  * receive: do not store endpoint in ctx
+  * queueing: move from ctx to cb
+  * Makefile: clang now builds the kernel, so use scan-build
+  * compat: macro rewrite netlink instead of cluttering
+  * queueing: cleanup skb_padding
+  * version: bump snapshot
+  * receive: do not consider 0 jiffies as being set
+  * socket: compare while unlocked first
+  * socket: don't bother recomparing afterwards
+  * socket: gcc inlining makes this faster
+  * tools: try again if dump is interrupted
+  * Makefile: quiet recursive make
+  * qemu: bump stable kernel
+  * crypto/x86_64: satisfy stack validation 2.0
+  * routingtable: only use device's mutex, not a special rt one
+  * routingtable: iterate progressively
+  * tools: warn once on unrecognized items
+  * tools: store tail pointer to make coalescing peers fast
+  * compat: move version logic to compat.h and out of main .c
+  * send: do not requeue if packet is dead
+  * socket: set skb->mark in addition to flowi
+  * tools: man: include kill-switch documentation using fwmark
+  * receive: disable bh before using stats seq lock
+  * contrib: filter compat lines
+  * version: bump snapshot
+  * noise: handshake constants can be read-only after init
+  * compat: just make ro_after_init read_mostly
+  * noise: no need to take the RCU lock if we're not dereferencing
+  * send: improve dead packet control flow
+  * socket: eliminate dead code
+  * device: our use of queues means this check is worthless
+  * device: no need to take lock for integer comparison
+  * compat: support READ_ONCE
+  * receive: improve control flow
+  * Makefile: do not clean before cloc
+  * blake2s: modernize API and have faster _final
+  * selftest: better test index for rate limiter
+  * qemu: add build-only target
+  * qemu: work on ubuntu toolchain
+  * qemu: add more debugging options to main makefile
+  * qemu: simplify shutdown
+  * qemu: open /dev/console if we're started early
+  * qemu: phase out bitbanging
+  * qemu: always create directory before untarring
+  * qemu: newer packages
+  * Makefile: even prettier output
+  * tools: encoding: be more paranoid
+  * tools: retry resolution except when fatal
+  * tools: don't insist on having a private key
+  * tools: add pass example to wg-quick man page
+  * netns: disable accept_dad for all interfaces
+  * qemu: put hvc directive into configuration
+  * tools: style
+  * tools: newline after warning
+  * tools: account for padding being in zero attribute
+  * version: bump snapshot
+
+  [ Trevor Joynson (Debian) ]
+  * debianize
+  * Bump
+  * Bump
+  * Bump
+  * Bump
+  * Bump
+  * better
+  * Bump
+  * Bump
+  * New patches
+  * Bump
+  * Bump
+  * Bump
+
+ -- Trevor Joynson (Debian) <debian@trevor.joynson.io>  Sun, 22 Oct 2017 05:49:15 -0700
+
 wireguard (0.0.20171017-1) zesty; urgency=medium
 
   [ Trevor Joynson (Debian) ]
