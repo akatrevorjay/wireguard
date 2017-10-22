@@ -1,6 +1,4 @@
-wireguard (0.0.20171017-1~2.gbpce9a92) UNRELEASED; urgency=medium
-
-  ** SNAPSHOT build @ce9a9247f28a5817852dd7f41ba8b99e764cf6b4 **
+wireguard (0.0.20171017-1) zesty; urgency=medium
 
   [ Trevor Joynson (Debian) ]
   ** SNAPSHOT build @f2f59d912ea5001e5be20a98ec6dd52b0ad3f2b6 **
@@ -240,8 +238,10 @@ wireguard (0.0.20171017-1~2.gbpce9a92) UNRELEASED; urgency=medium
   * Bump
   * Bump
   * New patches
+  * Bump
+  * Bump
 
- -- Trevor Joynson (trevorj) <gpg@skywww.net>  Sun, 22 Oct 2017 05:41:14 -0700
+ -- Trevor Joynson (Debian) <debian@trevor.joynson.io>  Sun, 22 Oct 2017 05:43:01 -0700
 
 wireguard (0.0.20170623-1) unstable; urgency=medium
 
