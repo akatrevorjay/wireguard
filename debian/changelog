@@ -1,3 +1,11 @@
+wireguard (0.0.20171017-1ubuntu2~1.gbp6448c8) UNRELEASED; urgency=medium
+
+  ** SNAPSHOT build @6448c84d5406bedf73ded545293e317d9582c786 **
+
+  * Bump
+
+ -- Trevor Joynson (Debian) <debian@trevor.joynson.io>  Sun, 22 Oct 2017 06:06:33 -0700
+
 wireguard (0.0.20171017-1ubuntu1) zesty; urgency=medium
 
   [ Jason A. Donenfeld ]
